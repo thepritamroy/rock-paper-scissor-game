@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+
+
+</head>
+<body>
+
+    <div class="container">
+        <p class="tittle">Rock Paper Scissors</p>
+
+        <button class="moves-btn js-rock-btn" onkeydown="" onclick="
+        gamePlay('Rock')
+        "><img src="rock.png" alt="" height="40px"></button>
+    
+        <button class="moves-btn"  onclick="
+        gamePlay('Paper')
+        "><img src="paper.png" alt="" height="40px"></button>
+    
+        <button class="moves-btn"  onclick="
+        gamePlay('Scissor')
+        "><img src="scissor.png" alt="" height="40px"></button>
+    
+        <p class="js-result result-line"></p>
+        <p class="js-moves">
+    
+            <img src="" alt="">
+        </p>
+        <p class="js-score score-line" ></p>
+     
+    
+        <button class="reset-btn js-reset-score"  onclick="
+        
+        
+    
+        ">Reset Score</button>
+    
+        <button class="reset-btn js-autoPlay-btn" onclick="
+        
+        autoPlayfun();
+        
+        ">Auto Play</button>
+        <br>
+        <br>
+    
+        <span class="js-reset-confirm reset-confirm" onkeydown=""></span>
+        <button class="js-yes-btn yes-btn " onkeydown="" onclick="
+        yesFunction();
+        "></button>
+        <button onclick="
+        noFunction();
+        
+        " class="js-no-btn yes-btn"></button>
+    </div>
+     
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
